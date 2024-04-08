@@ -19,7 +19,10 @@
 <!-- 모달을 여는 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/coke.jpg" alt="coke_img">
-	<p>콜라</p>
+	<div class= "item_tit">
+	  <div class="badge"> </div>
+	    <h3 inicistranslate"true" inicistranslateindex="7">코카콜라
+	    </h3>
 	<p>2,000원</p>
 </button>
 
@@ -37,7 +40,10 @@
 <!-- 모달을 여는 두 번째 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/sprite.jpg" alt="sprite_img">
-	<p>스프라이트</p>
+	<div class= "item_tit">
+	  <div class="badge"> </div>
+	    <h3 inicistranslate"true" inicistranslateindex="8">스프라이트
+	    </h3>
 	<p>2,000원</p>
 </button>
 
@@ -56,7 +62,10 @@
 <!-- 모달을 여는 세 번째 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/soju.jpg" alt="soju_img">
-	<p>소주</p>
+	<div class= "item_tit">
+	  <div class="badge"> </div>
+	    <h3 inicistranslate"true" inicistranslateindex="9">소주
+	    </h3>
 	<p>5,000원</p>
 </button>
 
@@ -75,7 +84,10 @@
 <!-- 모달을 여는 네 번째 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/cass.jpg" alt="cass_img">
-	<p>맥주</p>
+	<div class= "item_tit">
+	  <div class="badge"> </div>
+	    <h3 inicistranslate"true" inicistranslateindex="10">맥주
+	    </h3>
 	<p>5,000원</p>
 </button>
 
