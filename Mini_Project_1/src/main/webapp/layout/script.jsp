@@ -16,7 +16,7 @@
 			$('#myModal').show()
 			
 			let item = $(this)
-
+ 
 			let productId = item.attr("id")
 			let count = item.children()[0].value
 			let img = $( item.children()[1] ).clone()
