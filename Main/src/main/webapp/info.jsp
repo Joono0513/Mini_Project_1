@@ -2,7 +2,9 @@
 화면 하단 푸터 사용 안내 jsp 작성 -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ include file="layout/header.jsp" %>
 <%@ include file="layout/footer.jsp" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,11 +15,14 @@
 </head>
 <body>
 
-	<div class="info">
-		<h1 style="padding-top: 30px;">QR 주문 소개</h1>
-		<img alt="info" src="static/img/info.png" >
-	</div>
+    <header class="main-header">
+        <h1>QR 주문 소개</h1>
+    </header>
 
-	
+    <div class="info">
+      <!--   <h1 style="padding-top: 30px;">QR 주문 소개</h1> -->
+        <img alt="info" src="static/img/info.png" >
+    </div>
+
 </body>
 </html>

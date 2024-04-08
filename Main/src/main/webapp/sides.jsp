@@ -19,7 +19,7 @@
 <!-- 모달을 여는 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/dumpling.jpg" alt="dumpling_img">
-	<p>만두</p>
+	 <h3>만두</h3>
 	<p>8,500000000000원</p>
 </button>
 
@@ -38,7 +38,7 @@
 <!-- 모달을 여는 두 번째 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/cutlet.jpg" alt="cutlet_img">
-	<p>돈까스</p>
+	 <h3>돈까스</h3>
 	<p>9,50000원</p>
 </button>
 
@@ -58,7 +58,7 @@
 <!-- 모달을 여는 세 번째 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/fried_shrimp.jpg" alt="fried_shrimp_img">
-	<p>새우튀김</p>
+	 <h3>새우튀김</h3>
 	<p>10,500원</p>
 </button>
 

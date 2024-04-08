@@ -19,7 +19,10 @@
 <!-- 모달을 여는 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/noodle.jpg" alt="food_img1">
-	<p>냉면</p>
+	<div class= "item_tit">
+	  <div class="badge"> </div>
+	    <h3>함흥냉면</h3>
+	    </div>
 	<p>8,500원</p>
 </button>
 
@@ -38,7 +41,10 @@
 <!-- 모달을 여는 두 번째 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/spicy_noodle.jpg" alt="food_img2">
-	<p>비빔 냉면</p>
+	<div class= "item_tit">
+	  <div class="badge"> </div>
+	 <h3>비빔냉면</h3>
+	</div>
 	<p>9,500원</p>
 </button>
 
@@ -59,7 +65,10 @@
 <!-- 모달을 여는 세 번째 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/southKorea_noodle.jpg" alt="food_img3">
-	<p>평양 냉면</p>
+	<div class= "item_tit">
+	  <div class="badge"> </div>
+	    <h3>평양냉면</h3>
+	    </div>
 	<p>9,500원</p>
 </button>
 
