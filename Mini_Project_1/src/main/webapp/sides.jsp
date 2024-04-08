@@ -61,7 +61,7 @@
             <h4 id="product-detail-name"></h4>
             <h4 id="product-detail-price"></h4>
             <button type="button" id="detail-minus">-</button>
-            <input type="number" name="" value="0" id="detail-count" />
+            <input type="text" name="" value="0" id="detail-count" onkeydown="return false;">
             <button type="button" id="detail-plus">+</button>
 	    </div>
 	    </div>

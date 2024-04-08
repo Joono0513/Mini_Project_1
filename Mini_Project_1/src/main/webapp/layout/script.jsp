@@ -60,7 +60,7 @@
             } else {
                 // 수량 1보다 작아지면 1로 만듦
                 $('#detail-count').val(1);
-            }
+              }
          });
        
         function updateTotalPrice(count) {
