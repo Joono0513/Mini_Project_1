@@ -21,7 +21,12 @@
 	<img src="static/img/noodle.jpg" alt="food_img1">
 	<div class= "item_tit">
 	  <div class="badge"> </div>
+<<<<<<< HEAD
 	    <h3>함흥냉면</h3>
+=======
+	    <h3 inicistranslate"true" inicistranslateindex="1">함흥냉면
+	    </h3>
+>>>>>>> refs/remotes/origin/IJY
 	    </div>
 	<p>8,500원</p>
 </button>
@@ -43,7 +48,12 @@
 	<img src="static/img/spicy_noodle.jpg" alt="food_img2">
 	<div class= "item_tit">
 	  <div class="badge"> </div>
+<<<<<<< HEAD
 	 <h3>비빔냉면</h3>
+=======
+	    <h3 inicistranslate"true" inicistranslateindex="2">비빔냉면
+	    </h3>
+>>>>>>> refs/remotes/origin/IJY
 	</div>
 	<p>9,500원</p>
 </button>
@@ -67,7 +77,12 @@
 	<img src="static/img/southKorea_noodle.jpg" alt="food_img3">
 	<div class= "item_tit">
 	  <div class="badge"> </div>
+<<<<<<< HEAD
 	    <h3>평양냉면</h3>
+=======
+	    <h3 inicistranslate"true" inicistranslateindex="3">평양냉면
+	    </h3>
+>>>>>>> refs/remotes/origin/IJY
 	    </div>
 	<p>9,500원</p>
 </button>

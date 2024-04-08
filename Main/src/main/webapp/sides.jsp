@@ -19,8 +19,17 @@
 <!-- 모달을 여는 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/dumpling.jpg" alt="dumpling_img">
+<<<<<<< HEAD
 	 <h3>만두</h3>
 	<p>8,500000000000원</p>
+=======
+	<div class= "item_tit">
+	  <div class="badge"> </div>
+	    <h3 inicistranslate"true" inicistranslateindex="4">만두
+	    </h3>
+	    </div>
+	<p>4000원</p>
+>>>>>>> refs/remotes/origin/IJY
 </button>
 
 <!-- 모달 구조 -->
@@ -38,8 +47,16 @@
 <!-- 모달을 여는 두 번째 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/cutlet.jpg" alt="cutlet_img">
+<<<<<<< HEAD
 	 <h3>돈까스</h3>
 	<p>9,50000원</p>
+=======
+	<div class= "item_tit">
+	  <div class="badge"> </div>
+	    <h3 inicistranslate"true" inicistranslateindex="5">돈까스
+	    </h3>
+	<p>8000원</p>
+>>>>>>> refs/remotes/origin/IJY
 </button>
 
 
@@ -58,8 +75,16 @@
 <!-- 모달을 여는 세 번째 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/fried_shrimp.jpg" alt="fried_shrimp_img">
+<<<<<<< HEAD
 	 <h3>새우튀김</h3>
 	<p>10,500원</p>
+=======
+	<div class= "item_tit">
+	  <div class="badge"> </div>
+	    <h3 inicistranslate"true" inicistranslateindex="6">새우튀김
+	    </h3>
+	<p>8000원</p>
+>>>>>>> refs/remotes/origin/IJY
 </button>
 
 

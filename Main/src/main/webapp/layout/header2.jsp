@@ -12,26 +12,8 @@
 </head>
 <body>
 
-<!-- 메인 헤더: 메뉴판 제목 -->
-<header class="main-header">
-	<h1>메뉴판</h1>
-	
-    <hr>
-</header>
-
-	<!-- 상단 네비게이션 바 -->
-<header class="header-nav">
-    <nav>
-        <a href="modal_menu.jsp" class="nav-item">메뉴</a>
-        <a href="sides.jsp" class="nav-item">사이드</a>
-        <a href="drinks.jsp" class="nav-item">음료 & 주류</a>
-    </nav>
-</header>
-
+<div class="QR">
+  <h1 class="title">장바구니</h1>
 </body>
 </html>
-
-
-
-
 
