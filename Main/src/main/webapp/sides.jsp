@@ -18,18 +18,12 @@
 
 <!-- 모달을 여는 버튼 -->
 <button class="openModalBtn" data-target="myModal">
-	<img src="static/img/dumpling.jpg" alt="dumpling_img">
-<<<<<<< HEAD
-	 <h3>만두</h3>
-	<p>8,500000000000원</p>
-=======
+<img src="static/img/dumpling.jpg" alt="dumpling_img">
 	<div class= "item_tit">
 	  <div class="badge"> </div>
-	    <h3 inicistranslate"true" inicistranslateindex="4">만두
-	    </h3>
+	    <h3>만두</h3>
 	    </div>
-	<p>4000원</p>
->>>>>>> refs/remotes/origin/IJY
+	<p>4,000원</p>
 </button>
 
 <!-- 모달 구조 -->
@@ -38,7 +32,7 @@
         <span class="closeBtn">&times;</span>
         <p>이곳에 모달 내용이 표시됩니다!</p>
         <hr>
-        <p>모달 냉면 내용.</p>
+        <p>모달 만두 내용.</p>
         <!-- 여러 줄의 내용이 여기에 추가될 수 있습니다 -->
         <button class="submit">추가하기</button>
     </div>
@@ -47,16 +41,11 @@
 <!-- 모달을 여는 두 번째 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/cutlet.jpg" alt="cutlet_img">
-<<<<<<< HEAD
-	 <h3>돈까스</h3>
-	<p>9,50000원</p>
-=======
 	<div class= "item_tit">
 	  <div class="badge"> </div>
-	    <h3 inicistranslate"true" inicistranslateindex="5">돈까스
-	    </h3>
-	<p>8000원</p>
->>>>>>> refs/remotes/origin/IJY
+    <h3>돈까스</h3>
+	</div>
+	<p>8,000원</p>
 </button>
 
 
@@ -64,6 +53,7 @@
 <div id="myModal" class="modal">
     <div class="modal-content">
         <span class="closeBtn">&times;</span>
+        <p>이곳에 모달 내용이 표시됩니다!</p>
         <p>이곳에 모달 내용이 표시됩니다!</p>
         <hr>
         <p>비빔 냉면 내용.</p>
@@ -75,16 +65,11 @@
 <!-- 모달을 여는 세 번째 버튼 -->
 <button class="openModalBtn" data-target="myModal">
 	<img src="static/img/fried_shrimp.jpg" alt="fried_shrimp_img">
-<<<<<<< HEAD
-	 <h3>새우튀김</h3>
-	<p>10,500원</p>
-=======
 	<div class= "item_tit">
 	  <div class="badge"> </div>
-	    <h3 inicistranslate"true" inicistranslateindex="6">새우튀김
-	    </h3>
-	<p>8000원</p>
->>>>>>> refs/remotes/origin/IJY
+     	<h3>새우튀김</h3>
+	    </div>
+	<p>6,000원</p>
 </button>
 
 
@@ -94,6 +79,7 @@
         <span class="closeBtn">&times;</span>
         <p>이곳에 모달 내용이 표시됩니다!</p>
         <hr>
+        <p>시~ㅂ말</p>
         <p>세번째 평양 냉면 내용.</p>
         <!-- 내용 추가 -->
         <button class="submit">추가하기</button>
