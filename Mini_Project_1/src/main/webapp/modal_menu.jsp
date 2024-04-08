@@ -16,7 +16,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>주문 화면</title>
     <!-- 이정용 : style.css 파일에 모달화면 css를 홍콩반점과 같이 꾸며주세요. -->
-    <link rel="stylesheet" href="static/css/style2.css"> 
+    <link rel="stylesheet" href="static/css/style.css"> 
     
 </head>
 <body>

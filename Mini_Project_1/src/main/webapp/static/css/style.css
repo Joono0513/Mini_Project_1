@@ -36,6 +36,57 @@
     cursor: pointer;
 }
 
+.index input[type="hidden"] {
+    display: none;
+}
+
+#detail-img-box {
+	text-align: center;
+}
+
+img {
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+#detail-count {
+	width: 15%;
+	background-color: white;
+	color: black;
+}
+
+#product-detail-name {
+	margin: 15px;
+	text-align: center;
+}
+#product-detail-price {
+	text-align: right;
+}
+
+#detail-plus {
+	background-color: black;
+	color: white;
+}
+
+#detail-minus {
+	background-color: white;
+	color: black;
+}
+
+.modal-footer {
+  text-align: center;
+  padding: 2px 16px;
+  background-color: black;
+  color: white;
+}
+.pop-btn {
+	display: inline-block;
+	width: 45%;
+}
+
 
 /* ======================================================================== */
 /* 모바일에서 2개씩 정렬 */
@@ -374,4 +425,3 @@ body {
 /* ======================================================================== */
 
 /* 상단 메뉴 슬라이드 애니메이셔 */
-
