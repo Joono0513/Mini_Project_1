@@ -25,16 +25,6 @@ public class ShoppingCart {
     	}
 		items.add(item);
     }
-    
-    public void removeProduct(String productId) {
-        List<Product> productsToRemove = new ArrayList<>();
-        for (Product product : items) {
-            if (product.getProductId().equals(productId)) {
-                productsToRemove.add(product);
-            }
-        }
-        items.removeAll(productsToRemove);
-    }
 
     public List<Product> getItems() {
         return items;

@@ -1,15 +1,13 @@
 <!-- 2024-04-03 : 박은서
 메인 메뉴 화면 및 메뉴 클릭 시 모달 팝업 -->
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@page import="store.DTO.Product"%>
 <%@page import="java.util.ArrayList"%>
+<%@page import="store.DTO.Product"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="layout/header.jsp" %>
 <%@ include file="layout/footer.jsp" %>
 <%@ include file="layout/footer2.jsp" %>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,22 +18,22 @@
     
 </head>
 <body>
+
 <%
 	List<Product> productList = new ArrayList<Product>();
 	
-	Product product1 = new Product("P0001", "물냉3", 8000, 1, "/img/물냉.jpg");
-	Product product2 = new Product("P0002", "비냉1", 9000, 1, "/img/비냉.jpg");
-	Product product3 = new Product("P0003", "평냉5", 10000, 1, "/img/평냉.jpg");
-	Product product4 = new Product("P0004", "공깃밥7", 1000, 1, "/img/공깃밥.jpg");
+	Product product1 = new Product("P0001", "냉면", 8000, 1, "/static/img/noodle.jpg");
+	Product product2 = new Product("P0002", "비빔냉면", 9000, 1, "/static/img/spicy_noodle.jpg");
+	Product product3 = new Product("P0003", "평양냉면", 10000, 1, "/static/img/southKorea_noodle.jpg");
 	
 	productList.add(product1);
 	productList.add(product2);
 	productList.add(product3);
-	productList.add(product4);
 	
 %>
 
 <!-- 모달을 여는 버튼 -->
+<div>
 	<c:forEach var="product" items="<%= productList %>">
 		<div class="product-item" id="${ product.productId }">
 			<input type="hidden" name="count" value="${ product.count }" />
@@ -45,11 +43,10 @@
 		</div>
    	</c:forEach>
 </div>
-<!-- The Modal -->
-	<div id="myModal" class="modal">
-	
-	  <!-- Modal content -->
-	  <div class="modal-content">
+
+<!-- 모달 구조 -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
 	    <div class="modal-header">
 	      <span class="closeBtn">&times;</span>
 	    </div>
@@ -79,3 +76,4 @@
 
 </body>
 </html>
+    

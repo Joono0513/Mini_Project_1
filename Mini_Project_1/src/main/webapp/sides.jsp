@@ -23,9 +23,9 @@
 <%
 	List<Product> productList = new ArrayList<Product>();
 	
-	Product product1 = new Product("P0005", "만두", 6000, 1, "/img/dumpling.jpg");
-	Product product2 = new Product("P0006", "돈까스", 9000, 1, "/img/cutlet.jpg");
-	Product product3 = new Product("P0007", "새우튀김", 5000, 1, "/img/fried_shrimp.jpg");
+	Product product1 = new Product("P0004", "만두", 6000, 1, "/static/img/dumpling.jpg");
+	Product product2 = new Product("P0005", "돈까스", 9000, 1, "/static/img/cutlet.jpg");
+	Product product3 = new Product("P0006", "새우튀김", 5000, 1, "/static/img/fried_shrimp.jpg");
 	
 	productList.add(product1);
 	productList.add(product2);
@@ -34,12 +34,13 @@
 %>
 
 <!-- 모달을 여는 버튼 -->
+<div>
 	<c:forEach var="product" items="<%= productList %>">
 		<div class="product-item" id="${ product.productId }">
 			<input type="hidden" name="count" value="${ product.count }" />
 	   		<img src="<%= request.getContextPath() %>${ product.filePath }" width="200" alt="food_img1">
 			<h4>${ product.name }</h4>
-			<h3>${ product.price }</h4>
+			<h3>${ product.price }</h3>
 		</div>
    	</c:forEach>
 </div>
@@ -53,6 +54,7 @@
 	    </div>
 	    <div class="modal-body">
 	    <div class="menu">
+	    	<span id="detail-product-id" style="display: none;"></span>
 	    	<div id="detail-img-box">
 	    		
 	    	</div>

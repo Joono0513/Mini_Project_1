@@ -24,10 +24,10 @@
 <%
 	List<Product> productList = new ArrayList<Product>();
 	
-	Product product1 = new Product("P0008", "콜라", 3000, 1, "/img/coke.jpg");
-	Product product2 = new Product("P0009", "스프라이트", 3000, 1, "/img/sprite.jpg");
-	Product product3 = new Product("P0010", "소주", 5000, 1, "/img/soju.jpg");
-	Product product4 = new Product("P0011", "맥주", 5000, 1, "/img/cass.jpg");
+	Product product1 = new Product("P0007", "콜라", 3000, 1, "/static/img/coke.jpg");
+	Product product2 = new Product("P0008", "스프라이트", 3000, 1, "/static/img/sprite.jpg");
+	Product product3 = new Product("P0009", "소주", 5000, 1, "/static/img/soju.jpg");
+	Product product4 = new Product("P0010", "맥주", 5000, 1, "/static/img/cass.jpg");
 	
 	productList.add(product1);
 	productList.add(product2);
@@ -37,6 +37,7 @@
 %>
 
 <!-- 모달을 여는 버튼 -->
+<div>
 	<c:forEach var="product" items="<%= productList %>">
 		<div class="product-item" id="${ product.productId }">
 			<input type="hidden" name="count" value="${ product.count }" />
@@ -56,6 +57,7 @@
 	    </div>
 	    <div class="modal-body">
 	    <div class="menu">
+	    	<span id="detail-product-id" style="display: none;"></span>
 	    	<div id="detail-img-box">
 	    		
 	    	</div>

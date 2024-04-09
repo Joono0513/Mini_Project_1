@@ -27,16 +27,3 @@
 	// ii) url 경로를 지정하여 이동
 	response.sendRedirect(request.getContextPath() + "/");
 %>
-
-
-
-
-
-
-
-
-
-
-
-
-
