@@ -9,13 +9,14 @@ public class Users {
 	private String phone;
 	private String name;
 	private Date joinDate;
+	private int point;
 	
 	// 기본 생성자
 	public Users() {
 		
 	}
-	// ====================================================================================
 	
+	// ====================================================================================
 	// getter&setter
 	public String getPhone() {
 		return phone;
@@ -40,6 +41,14 @@ public class Users {
 
 	public void setJoinDate(Date joinDate) {
 		this.joinDate = joinDate;
+	}
+
+	public int getPoint() {
+		return point;
+	}
+
+	public void setPoint(int point) {
+		this.point = point;
 	}
 	// ====================================================================================
 	
