@@ -16,7 +16,7 @@ public class OrderDAO extends JDBConnection {
 		// SQL 작성
 		String sql = " SELECT * " 
 				   + " FROM ORDERS "
-				   + " WHERE table_no = ? ";
+				   + " WHERE TABLE_NO = ? ";
 		try {
 			// 쿼리(SQL) 실행 객체 생성 - Statement (stmt)
 			// stmt = con.createStatement();
@@ -126,8 +126,8 @@ public Order select(int no) {
 		int result = 0;
 		
 		String sql = " UPDATE ORDERS "
-				   + " SET STATUS = 'complete' "
-				   + " WHERE table_no = ? ";
+				   + " SET STATUS = 'COMPLETE' "
+				   + " WHERE TABLE_NO = ? ";
 		
 		try {
 			psmt = con.prepareStatement(sql);
@@ -143,22 +143,17 @@ public Order select(int no) {
 	
 	
 	public int delete(int no) {
-		int result = 0;		// 결과 : 적용된 데이터 건수
+		int result = 0;		
 		
-		String sql = " DELETE FROM ORDERS "
-				   + " WHERE ORDER_NO = ? "
-				   + " AND TABLE_NO = ? ";
+		String sql = " UPDATE ORDERS "
+				   + " SET STATUS = 'CANCELED' "
+				   + " WHERE ORDER_NO = ? ";
 		
 		try {
 			psmt = con.prepareStatement(sql);	// 쿼리 실행 객체 생성
-			psmt.setInt( 1, no );
-			psmt.setInt( 2, no );									
+			psmt.setInt( 1, no );			
+			result = psmt.executeUpdate();		
 			
-			result = psmt.executeUpdate();		// SQL 실행 요청, 적용된 데이터 개수를 받아온다.
-												// 게시글 1개 적용 성공 시, result : 1
-												// 				실패 시, result : 0
-			// executeUpdate()
-			// : SQL (INSERT, UPDATE, DELETE)을 실행하고 적용된 데이터 개수를 int 타입으로 반환
 		} catch (SQLException e) {
 			System.err.println("주문 삭제 시, 예외 발생");
 			e.printStackTrace();
@@ -170,9 +165,11 @@ public Order select(int no) {
 		
 		List<Order> orderList = new ArrayList<Order>();
 		
-		String sql = "SELECT * FROM ORDERS "
-	               + "WHERE TRUNC(ORDER_DATE) = TO_DATE(?, 'YYYY-MM-DD')";
-		
+		String sql = " SELECT * FROM ORDERS "
+	               + " WHERE TRUNC (ORDER_DATE) " 
+	               + " = TO_DATE (?, 'YYYY-MM-DD') "
+	               + " AND STATUS != 'CANCELED' ";
+				
 		try {
 			psmt = con.prepareStatement(sql);
 			psmt.setString( 1, selectedDate );
