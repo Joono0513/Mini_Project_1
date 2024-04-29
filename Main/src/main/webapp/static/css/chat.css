@@ -1,0 +1,50 @@
+.chat-button {
+    position: fixed;
+    bottom: 85px;
+    left: 10px;
+    width: 50px;
+    height: 60px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.chat-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chat-header {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-content {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    background-color: #fff; /* 채팅 내용 배경은 흰색으로 */
+}
+
+.chat-input {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    width: calc(100% - 60px);
+    padding: 5px;
+}
+
+.chat-input button {
+    width: 50px;
+}
